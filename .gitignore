@@ -1,4 +1,6 @@
 schema_generator
 confluent*
 jvm-profiler
+producer/target
+consumer/target
 
