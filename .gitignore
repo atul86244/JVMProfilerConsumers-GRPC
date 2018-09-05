@@ -3,4 +3,6 @@ confluent*
 jvm-profiler
 producer/target
 consumer/target
+consumer/.idea
+producer/.idea
 
