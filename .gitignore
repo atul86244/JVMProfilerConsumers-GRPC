@@ -5,4 +5,6 @@ producer/target
 consumer/target
 consumer/.idea
 producer/.idea
+producer/.DS_Store
+consumer/.DS_Store
 
