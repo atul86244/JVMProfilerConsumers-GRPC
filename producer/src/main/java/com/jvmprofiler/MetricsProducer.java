@@ -32,7 +32,7 @@ public class MetricsProducer {
 
         Producer<String, JVMMetrics> producer = new KafkaProducer<String, JVMMetrics>(properties);
 
-        String topic = "jvm-metrics";
+        String topic = "jvm-metrics-1";
 
         String filename = "/Users/a0s01h8/Documents/MyDocuments/Documents/WalmartLabs/JVMProfiler/Metrics/CpuAndMemory.json";
         BufferedReader br = null;

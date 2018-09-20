@@ -7,4 +7,9 @@ consumer/.idea
 producer/.idea
 producer/.DS_Store
 consumer/.DS_Store
-
+grpc/
+.DS_Store
+grpc-setup/.idea
+grpc-setup/.gradle
+grpc-setup/build
+grpc-setup/out

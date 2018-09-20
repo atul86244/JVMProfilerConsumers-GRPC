@@ -26,7 +26,7 @@ public class MetricsConsumer {
             properties.setProperty("specific.avro.reader", "true");
 
             KafkaConsumer<String, JVMMetrics> kafkaConsumer = new KafkaConsumer<>(properties);
-            String topic = "jvm-metrics";
+            String topic = "jvm-metrics-1";
             TopicPartition topicPartition = new TopicPartition(topic,0);
             List<TopicPartition> topics = Arrays.asList(topicPartition);
 
