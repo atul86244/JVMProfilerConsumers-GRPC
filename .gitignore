@@ -13,3 +13,4 @@ grpc-setup/.idea
 grpc-setup/.gradle
 grpc-setup/build
 grpc-setup/out
+grpc-setup/gradle
