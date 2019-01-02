@@ -1,0 +1,169 @@
+{"nonHeapMemoryTotalUsed": 1.3107848E7, "bufferPools": [{"totalCapacity": 0, "name": "direct", "count": 0, "memoryUsed": 0}, {"totalCapacity": 0, "name": "mapped", "count": 0, "memoryUsed": 0}], "heapMemoryTotalUsed": 2.9780808E7, "epochMillis": 1544075529688, "nonHeapMemoryCommitted": 1.4876672E7, "heapMemoryCommitted": 2.57425408E8, "memoryPools": [{"peakUsageMax": 251658240, "usageMax": 251658240, "peakUsageUsed": 1274368, "name": "Code Cache", "peakUsageCommitted": 2555904, "usageUsed": 1258496, "type": "Non-heap memory", "usageCommitted": 2555904}, {"peakUsageMax": -1, "usageMax": -1, "peakUsageUsed": 10632896, "name": "Metaspace", "peakUsageCommitted": 11010048, "usageUsed": 10632896, "type": "Non-heap memory", "usageCommitted": 11010048}, {"peakUsageMax": 1073741824, "usageMax": 1073741824, "peakUsageUsed": 1217160, "name": "Compressed Class Space", "peakUsageCommitted": 1310720, "usageUsed": 1217160, "type": "Non-heap memory", "usageCommitted": 1310720}, {"peakUsageMax": 1409286144, "usageMax": 1409286144, "peakUsageUsed": 29780808, "name": "PS Eden Space", "peakUsageCommitted": 67108864, "usageUsed": 29780808, "type": "Heap memory", "usageCommitted": 67108864}, {"peakUsageMax": 11010048, "usageMax": 11010048, "peakUsageUsed": 0, "name": "PS Survivor Space", "peakUsageCommitted": 11010048, "usageUsed": 0, "type": "Heap memory", "usageCommitted": 11010048}, {"peakUsageMax": 2863661056, "usageMax": 2863661056, "peakUsageUsed": 0, "name": "PS Old Gen", "peakUsageCommitted": 179306496, "usageUsed": 0, "type": "Heap memory", "usageCommitted": 179306496}], "processCpuLoad": 0.0019528121702002549, "systemCpuLoad": 0.2030178326474623, "processCpuTime": 858145000, "appId": "MyTestApp", "name": "90130@m-c02tr3kbg8wn", "host": "m-c02tr3kbg8wn", "processUuid": "331c79a4-4fa0-4db7-a38b-6b7ec3a2806c", "gc": [{"collectionTime": 0, "name": "PS Scavenge", "collectionCount": 0}, {"collectionTime": 0, "name": "PS MarkSweep", "collectionCount": 0}]}
+
+============================================================
+
+appId = 
+host = 
+name = 
+processUuid = 
+
+System.out.println("jvmprofiler.metrics." + host + "." + appId + "." + processUuid + "." + "nonHeapMemoryTotalUsed " + value.getNonHeapMemoryTotalUsed() + " " + value.getEpochMillis() );
+
+System.out.println("jvmprofiler.metrics." + host + "." + appId + "." + processUuid + "." + "bufferPools " + value.getbufferPools() + " " + value.getEpochMillis() );
+
+System.out.println("jvmprofiler.metrics." + host + "." + appId + "." + processUuid + "." + "heapMemoryTotalUsed " + value.getheapMemoryTotalUsed() + " " + value.getEpochMillis() );
+
+System.out.println("jvmprofiler.metrics." + host + "." + appId + "." + processUuid + "." + "nonHeapMemoryCommitted " + value.getnonHeapMemoryCommitted() + " " + value.getEpochMillis() );
+
+System.out.println("jvmprofiler.metrics." + host + "." + appId + "." + processUuid + "." + "memoryPools " + value.getmemoryPools() + " " + value.getEpochMillis() );
+
+System.out.println("jvmprofiler.metrics." + host + "." + appId + "." + processUuid + "." + "processCpuLoad " + value.getprocessCpuLoad() + " " + value.getEpochMillis() );
+
+System.out.println("jvmprofiler.metrics." + host + "." + appId + "." + processUuid + "." + "systemCpuLoad " + value.getsystemCpuLoad() + " " + value.getEpochMillis() );
+
+System.out.println("jvmprofiler.metrics." + host + "." + appId + "." + processUuid + "." + "processCpuTime " + value.getprocessCpuTime() + " " + value.getEpochMillis() );
+
+System.out.println("jvmprofiler.metrics." + host + "." + appId + "." + processUuid + "." + "name " + value.getname() + " " + value.getEpochMillis() );
+
+System.out.println("jvmprofiler.metrics." + host + "." + appId + "." + processUuid + "." + "gc " + value.getgc() + " " + value.getEpochMillis() );
+
+jvmprofiler.metrics.host.appId.processUuid.
+
+jvmprofiler.metrics.host.appId.processUuid.nonHeapMemoryTotalUsed
+jvmprofiler.metrics.host.appId.processUuid.bufferPools
+         "totalCapacity": 0,
+      "name": "direct",
+      "count": 0,
+      "memoryUsed": 0
+jvmprofiler.metrics.host.appId.processUuid.heapMemoryTotalUsed
+jvmprofiler.metrics.host.appId.processUuid.epochMillis
+jvmprofiler.metrics.host.appId.processUuid.nonHeapMemoryCommitted
+jvmprofiler.metrics.host.appId.processUuid.heapMemoryCommitted
+jvmprofiler.metrics.host.appId.processUuid.memoryPools
+         "peakUsageMax": 251658240,
+      "usageMax": 251658240,
+      "peakUsageUsed": 1274368,
+      "name": "Code Cache",
+      "peakUsageCommitted": 2555904,
+      "usageUsed": 1258496,
+      "type": "Non-heap memory",
+      "usageCommitted": 2555904
+jvmprofiler.metrics.host.appId.processUuid.processCpuLoad
+jvmprofiler.metrics.host.appId.processUuid.systemCpuLoad
+jvmprofiler.metrics.host.appId.processUuid.processCpuTime
+
+jvmprofiler.metrics.host.appId.processUuid.appId
+
+
+jvmprofiler.metrics.host.appId.processUuid.name
+jvmprofiler.metrics.host.appId.processUuid.host
+jvmprofiler.metrics.host.appId.processUuid.processUuid
+jvmprofiler.metrics.host.appId.processUuid.gc
+         "collectionTime": 0,
+      "name": "PS Scavenge",
+      "collectionCount": 0
+
+============================================================
+
+{
+  "nonHeapMemoryTotalUsed": 13107848,
+  "bufferPools": [
+    {
+      "totalCapacity": 0,
+      "name": "direct",
+      "count": 0,
+      "memoryUsed": 0
+    },
+    {
+      "totalCapacity": 0,
+      "name": "mapped",
+      "count": 0,
+      "memoryUsed": 0
+    }
+  ],
+  "heapMemoryTotalUsed": 29780808,
+  "epochMillis": 1544075529688,
+  "nonHeapMemoryCommitted": 14876672,
+  "heapMemoryCommitted": 257425408,
+  "memoryPools": [
+    {
+      "peakUsageMax": 251658240,
+      "usageMax": 251658240,
+      "peakUsageUsed": 1274368,
+      "name": "Code Cache",
+      "peakUsageCommitted": 2555904,
+      "usageUsed": 1258496,
+      "type": "Non-heap memory",
+      "usageCommitted": 2555904
+    },
+    {
+      "peakUsageMax": -1,
+      "usageMax": -1,
+      "peakUsageUsed": 10632896,
+      "name": "Metaspace",
+      "peakUsageCommitted": 11010048,
+      "usageUsed": 10632896,
+      "type": "Non-heap memory",
+      "usageCommitted": 11010048
+    },
+    {
+      "peakUsageMax": 1073741824,
+      "usageMax": 1073741824,
+      "peakUsageUsed": 1217160,
+      "name": "Compressed Class Space",
+      "peakUsageCommitted": 1310720,
+      "usageUsed": 1217160,
+      "type": "Non-heap memory",
+      "usageCommitted": 1310720
+    },
+    {
+      "peakUsageMax": 1409286144,
+      "usageMax": 1409286144,
+      "peakUsageUsed": 29780808,
+      "name": "PS Eden Space",
+      "peakUsageCommitted": 67108864,
+      "usageUsed": 29780808,
+      "type": "Heap memory",
+      "usageCommitted": 67108864
+    },
+    {
+      "peakUsageMax": 11010048,
+      "usageMax": 11010048,
+      "peakUsageUsed": 0,
+      "name": "PS Survivor Space",
+      "peakUsageCommitted": 11010048,
+      "usageUsed": 0,
+      "type": "Heap memory",
+      "usageCommitted": 11010048
+    },
+    {
+      "peakUsageMax": 2863661056,
+      "usageMax": 2863661056,
+      "peakUsageUsed": 0,
+      "name": "PS Old Gen",
+      "peakUsageCommitted": 179306496,
+      "usageUsed": 0,
+      "type": "Heap memory",
+      "usageCommitted": 179306496
+    }
+  ],
+  "processCpuLoad": 0.0019528121702002549,
+  "systemCpuLoad": 0.2030178326474623,
+  "processCpuTime": 858145000,
+  "appId": "MyTestApp",
+  "name": "90130@m-c02tr3kbg8wn",
+  "host": "m-c02tr3kbg8wn",
+  "processUuid": "331c79a4-4fa0-4db7-a38b-6b7ec3a2806c",
+  "gc": [
+    {
+      "collectionTime": 0,
+      "name": "PS Scavenge",
+      "collectionCount": 0
+    },
+    {
+      "collectionTime": 0,
+      "name": "PS MarkSweep",
+      "collectionCount": 0
+    }
+  ]
+}

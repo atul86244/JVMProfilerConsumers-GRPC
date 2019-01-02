@@ -17,8 +17,6 @@ public class Client {
 
         Client main = new Client();
         main.run();
-
-        System.out.println("Creating stub");
     }
 
     private void run() {
@@ -66,6 +64,7 @@ public class Client {
         // To Do: Use loop to send metrics
 
         requestObserver.onNext(MetricsData.newBuilder()
+                .setHost("Test")
                 .build());
 
         // client is done sending data

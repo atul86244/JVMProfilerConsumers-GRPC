@@ -1,14 +1,11 @@
 package com.jvmprofiler;
 
 import io.confluent.kafka.serializers.KafkaAvroDeserializer;
-import io.confluent.kafka.serializers.KafkaAvroDeserializerConfig;
 import org.apache.kafka.clients.consumer.*;
 import org.apache.kafka.common.TopicPartition;
-import org.apache.kafka.common.serialization.LongDeserializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
 public class MetricsConsumer {
     public static void main(String[] args) {
@@ -42,9 +39,12 @@ public class MetricsConsumer {
                 for (ConsumerRecord<String, JVMMetrics> record : records){
                     JVMMetrics metrics = record.value();
                     System.out.println(metrics);
+                    //Client main = new Client();
+                    Client.run(metrics);
                 }
 
                 kafkaConsumer.commitSync();
+
             }
     }
 }

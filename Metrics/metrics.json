@@ -1,0 +1,102 @@
+{
+   "nonHeapMemoryTotalUsed":1.1980376E7,
+   "bufferPools":[
+      {
+         "totalCapacity":0,
+         "name":"direct",
+         "count":0,
+         "memoryUsed":0
+      },
+      {
+         "totalCapacity":0,
+         "name":"mapped",
+         "count":0,
+         "memoryUsed":0
+      }
+   ],
+   "heapMemoryTotalUsed":2.4418424E7,
+   "epochMillis":1539106578624,
+   "nonHeapMemoryCommitted":1.4352384E7,
+   "heapMemoryCommitted":2.57425408E8,
+   "memoryPools":[
+      {
+         "peakUsageMax":251658240,
+         "usageMax":251658240,
+         "peakUsageUsed":558464,
+         "name":"Code Cache",
+         "peakUsageCommitted":2555904,
+         "usageUsed":558464,
+         "type":"Non-heap memory",
+         "usageCommitted":2555904
+      },
+      {
+         "peakUsageMax":-1,
+         "usageMax":-1,
+         "peakUsageUsed":10256824,
+         "name":"Metaspace",
+         "peakUsageCommitted":10485760,
+         "usageUsed":10256824,
+         "type":"Non-heap memory",
+         "usageCommitted":10485760
+      },
+      {
+         "peakUsageMax":1073741824,
+         "usageMax":1073741824,
+         "peakUsageUsed":1166800,
+         "name":"Compressed Class Space",
+         "peakUsageCommitted":1310720,
+         "usageUsed":1166800,
+         "type":"Non-heap memory",
+         "usageCommitted":1310720
+      },
+      {
+         "peakUsageMax":1409286144,
+         "usageMax":1409286144,
+         "peakUsageUsed":24418424,
+         "name":"PS Eden Space",
+         "peakUsageCommitted":67108864,
+         "usageUsed":24418424,
+         "type":"Heap memory",
+         "usageCommitted":67108864
+      },
+      {
+         "peakUsageMax":11010048,
+         "usageMax":11010048,
+         "peakUsageUsed":0,
+         "name":"PS Survivor Space",
+         "peakUsageCommitted":11010048,
+         "usageUsed":0,
+         "type":"Heap memory",
+         "usageCommitted":11010048
+      },
+      {
+         "peakUsageMax":2863661056,
+         "usageMax":2863661056,
+         "peakUsageUsed":0,
+         "name":"PS Old Gen",
+         "peakUsageCommitted":179306496,
+         "usageUsed":0,
+         "type":"Heap memory",
+         "usageCommitted":179306496
+      }
+   ],
+   "processCpuLoad":0.0,
+   "systemCpuLoad":0.0,
+   "processCpuTime":824966000,
+   "appId":"MyTestApp",
+   "name":"28329@m-c02tr3kbg8wn",
+   "host":"m-c02tr3kbg8wn",
+   "processUuid":"5e452a71-f6be-4053-b245-ea725d87942f",
+   "gc":[
+      {
+         "collectionTime":0,
+         "name":"PS Scavenge",
+         "collectionCount":0
+      },
+      {
+         "collectionTime":0,
+         "name":"PS MarkSweep",
+         "collectionCount":0
+      }
+   ]
+}

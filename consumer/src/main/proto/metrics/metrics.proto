@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+package metrics;
+
+option java_package = "com.proto.metrics";
+option java_multiple_files = true;
+
+message MetricsData {
+    double nonHeapMemoryTotalUsed = 1;
+
+   message BUFFERPOOLS {
+      double totalCapacity = 1;
+      string name = 2;
+      double count = 3;
+      double memoryUsed = 4;
+   }
+
+   repeated BUFFERPOOLS bufferPools = 2;
+    double heapMemoryTotalUsed = 3;
+    double epochMillis = 4;
+    double nonHeapMemoryCommitted = 5;
+    double heapMemoryCommitted = 6;
+
+   message MEMORYPOOLS {
+      double peakUsageMax = 1;
+      double usageMax = 2;
+      double peakUsageUsed = 3;
+      string name = 4;
+      double peakUsageCommitted = 5;
+      double usageUsed = 6;
+      string type = 7;
+      double usageCommitted = 8;
+   }
+
+   repeated MEMORYPOOLS memoryPools = 7;
+    double processCpuLoad = 8;
+    double systemCpuLoad = 9;
+    double processCpuTime = 10;
+
+   message APPID {
+   }
+
+    APPID appId = 11;
+    string name = 12;
+    string host = 13;
+    string processUuid = 14;
+
+   message GC {
+      double collectionTime = 1;
+      string name = 2;
+      double collectionCount = 3;
+   }
+
+   repeated GC gc = 15;
+}
+
+message MetricsResponse {
+    string results = 1;
+}
+
+service MetricsService {
+
+    rpc Metrics(stream MetricsData) returns (MetricsResponse) {};
+}
