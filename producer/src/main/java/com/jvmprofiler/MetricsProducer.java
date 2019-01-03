@@ -34,7 +34,7 @@ public class MetricsProducer {
 
         String topic = "jvm-metrics-1";
 
-        String filename = "/Users/a0s01h8/Documents/MyDocuments/Documents/WalmartLabs/JVMProfiler/Metrics/CpuAndMemory.json";
+        String filename = "/tmp/CpuAndMemory.json";
         BufferedReader br = null;
         FileReader fr = null;
 

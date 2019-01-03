@@ -13,8 +13,11 @@ public class ExecuteProfiler {
 
         try {
 
-            Process delete = Runtime.getRuntime().exec("rm -f /Users/a0s01h8/Documents/MyDocuments/Documents/WalmartLabs/JVMProfiler/Metrics/CpuAndMemory.json /Users/a0s01h8/Documents/MyDocuments/Documents/WalmartLabs/JVMProfiler/Metrics/ProcessInfo.json ");
-            Process p = Runtime.getRuntime().exec("java -javaagent:src/main/resources/jvm-profiler-0.0.7.jar=reporter=com.uber.profiling.reporters.FileOutputReporter,outputDir=/Users/a0s01h8/Documents/MyDocuments/Documents/WalmartLabs/JVMProfiler/Metrics -cp target/jvm-profiler-0.0.7.jar com.uber.profiling.examples.HelloWorldApplication");
+            //Process delete = Runtime.getRuntime().exec("rm -f /Users/a0s01h8/Documents/MyDocuments/Documents/WalmartLabs/JVMProfiler/Metrics/CpuAndMemory.json /Users/a0s01h8/Documents/MyDocuments/Documents/WalmartLabs/JVMProfiler/Metrics/ProcessInfo.json ");
+            //Process p = Runtime.getRuntime().exec("java -javaagent:src/main/resources/jvm-profiler-0.0.7.jar=reporter=com.uber.profiling.reporters.FileOutputReporter,outputDir=/Users/a0s01h8/Documents/MyDocuments/Documents/WalmartLabs/JVMProfiler/Metrics -cp target/jvm-profiler-0.0.7.jar com.uber.profiling.examples.HelloWorldApplication");
+
+            Process delete = Runtime.getRuntime().exec("rm -f /tmp/CpuAndMemory.json /tmp/ProcessInfo.json ");
+            Process p = Runtime.getRuntime().exec("java -javaagent:src/main/resources/jvm-profiler-0.0.7.jar=reporter=com.uber.profiling.reporters.FileOutputReporter,outputDir=/tmp -cp target/jvm-profiler-0.0.7.jar com.uber.profiling.examples.HelloWorldApplication");
 
             BufferedReader stdInput = new BufferedReader(new
                     InputStreamReader(p.getInputStream()));
