@@ -32,6 +32,12 @@
     "name" : "heapMemoryTotalUsed",
     "type" : "double"
   }, {
+    "name" : "graphiteSchema",
+    "type" : "string"
+  }, {
+    "name" : "profiler",
+    "type" : "string"
+  }, {
     "name" : "epochMillis",
     "type" : "long"
   }, {
@@ -85,7 +91,7 @@
     "type" : "long"
   }, {
     "name" : "appId",
-    "type" : [ "null", "string" ]
+    "type" : "string"
   }, {
     "name" : "name",
     "type" : "string"

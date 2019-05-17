@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Created-By: a0s01h8
+Main-Class: com.jvmprofiler.MetricsProducer

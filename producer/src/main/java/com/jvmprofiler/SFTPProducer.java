@@ -16,7 +16,8 @@ import org.json.JSONObject;
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 
-public class MetricsProducer {
+
+public class SFTPProducer {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         Properties properties = new Properties();
         // normal producer
@@ -28,11 +29,11 @@ public class MetricsProducer {
         properties.setProperty("value.serializer", KafkaAvroSerializer.class.getName());
         properties.setProperty("schema.registry.url", "http://10.227.215.228:8081");
 
-        ExecuteProfiler.profiler();
+        SFTPExecuteProfiler.profiler();
 
         Producer<String, JVMMetrics> producer = new KafkaProducer<String, JVMMetrics>(properties);
 
-        String topic = "jvm-metrics-1";
+        String topic = "sftp-jvm-metrics-1";
 
         String filename = "/tmp/CpuAndMemory.json";
         BufferedReader br = null;
@@ -60,11 +61,11 @@ public class MetricsProducer {
                 for (int i = 0; i < bufferpools_len; ++i) {
                     final JSONObject bufferpool = bufferpools_array.getJSONObject(i);
                     bufferPools bufferpool_item = bufferPools.newBuilder()
-                      .setTotalCapacity(bufferpool.getLong("totalCapacity"))
-                      .setName(bufferpool.getString("name"))
-                      .setCount(bufferpool.getLong("count"))
-                      .setMemoryUsed(bufferpool.getLong("memoryUsed"))
-                    .build();
+                            .setTotalCapacity(bufferpool.getLong("totalCapacity"))
+                            .setName(bufferpool.getString("name"))
+                            .setCount(bufferpool.getLong("count"))
+                            .setMemoryUsed(bufferpool.getLong("memoryUsed"))
+                            .build();
                     buffpools.add(bufferpool_item);
                 }
 
@@ -73,15 +74,15 @@ public class MetricsProducer {
                 for (int i = 0; i < memorypools_len; ++i) {
                     final JSONObject memorypool = memorypools_array.getJSONObject(i);
                     memoryPools memorypool_item = memoryPools.newBuilder()
-                        .setPeakUsageMax(memorypool.getLong("peakUsageMax"))
-                        .setUsageMax(memorypool.getLong("usageMax"))
-                        .setPeakUsageUsed(memorypool.getLong("peakUsageUsed"))
-                        .setName(memorypool.getString("name"))
-                        .setPeakUsageCommitted(memorypool.getLong("peakUsageCommitted"))
-                        .setUsageUsed(memorypool.getLong("usageUsed"))
-                        .setType(memorypool.getString("type"))
-                        .setUsageCommitted(memorypool.getLong("usageCommitted"))
-                    .build();
+                            .setPeakUsageMax(memorypool.getLong("peakUsageMax"))
+                            .setUsageMax(memorypool.getLong("usageMax"))
+                            .setPeakUsageUsed(memorypool.getLong("peakUsageUsed"))
+                            .setName(memorypool.getString("name"))
+                            .setPeakUsageCommitted(memorypool.getLong("peakUsageCommitted"))
+                            .setUsageUsed(memorypool.getLong("usageUsed"))
+                            .setType(memorypool.getString("type"))
+                            .setUsageCommitted(memorypool.getLong("usageCommitted"))
+                            .build();
                     mempools.add(memorypool_item);
                 }
 
@@ -90,32 +91,32 @@ public class MetricsProducer {
                 for (int i = 0; i < gc_len; ++i) {
                     final JSONObject gc_json = gc_array.getJSONObject(i);
                     gc gc_item = gc.newBuilder()
-                        .setCollectionTime(gc_json.getLong("collectionTime"))
-                        .setName(gc_json.getString("name"))
-                        .setCollectionCount(gc_json.getLong("collectionCount"))
-                    .build();
+                            .setCollectionTime(gc_json.getLong("collectionTime"))
+                            .setName(gc_json.getString("name"))
+                            .setCollectionCount(gc_json.getLong("collectionCount"))
+                            .build();
                     gcs.add(gc_item);
                 }
 
                 JVMMetrics jvmmetrics = JVMMetrics.newBuilder()
-                    .setNonHeapMemoryTotalUsed(obj.getDouble("nonHeapMemoryTotalUsed"))
-                    .setBufferPools(buffpools)
-                    .setHeapMemoryTotalUsed(obj.getDouble("heapMemoryTotalUsed"))
-                    //.setVmRSS(obj.isNull("vmRSS") ? null : obj.getLong("vmRSS"))
-                    .setEpochMillis(obj.getLong("epochMillis"))
-                    .setNonHeapMemoryCommitted(obj.getDouble("nonHeapMemoryCommitted"))
-                    .setHeapMemoryCommitted(obj.getDouble("heapMemoryCommitted"))
-                    .setMemoryPools(mempools)
-                    .setProcessCpuLoad(obj.getDouble("processCpuLoad"))
-                    .setSystemCpuLoad(obj.getDouble("systemCpuLoad"))
-                    .setProcessCpuTime(obj.getLong("processCpuTime"))
-                    //.setVmHWM(obj.getLong("vmHWM"))
-                    .setAppId(obj.getString("appId"))
-                    .setName(obj.getString("name"))
-                    .setHost(obj.getString("host"))
-                    .setProcessUuid(obj.getString("processUuid"))
-                    .setGc(gcs)
-                .build();
+                        .setNonHeapMemoryTotalUsed(obj.getDouble("nonHeapMemoryTotalUsed"))
+                        .setBufferPools(buffpools)
+                        .setHeapMemoryTotalUsed(obj.getDouble("heapMemoryTotalUsed"))
+                        //.setVmRSS(obj.isNull("vmRSS") ? null : obj.getLong("vmRSS"))
+                        .setEpochMillis(obj.getLong("epochMillis"))
+                        .setNonHeapMemoryCommitted(obj.getDouble("nonHeapMemoryCommitted"))
+                        .setHeapMemoryCommitted(obj.getDouble("heapMemoryCommitted"))
+                        .setMemoryPools(mempools)
+                        .setProcessCpuLoad(obj.getDouble("processCpuLoad"))
+                        .setSystemCpuLoad(obj.getDouble("systemCpuLoad"))
+                        .setProcessCpuTime(obj.getLong("processCpuTime"))
+                        //.setVmHWM(obj.getLong("vmHWM"))
+                        .setAppId(obj.getString("appId"))
+                        .setName(obj.getString("name"))
+                        .setHost(obj.getString("host"))
+                        .setProcessUuid(obj.getString("processUuid"))
+                        .setGc(gcs)
+                        .build();
 
                 ProducerRecord<String, JVMMetrics> producerRecord = new ProducerRecord<String, JVMMetrics>(
                         topic, jvmmetrics

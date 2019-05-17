@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package methodArgument;
+
+option java_package = "com.proto.methodArgument";
+option java_multiple_files = true;
+
+message MethodArgumentMetrics {
+  required string metricName = 0
+  required string processName = 1
+
+  message APPID {
+  }
+
+  required APPID appId = 2
+  required string host = 3
+  required string processUuid = 4
+  required double metricValue = 5
+  required string methodName = 6
+  required string className = 7
+  required double epochMillis = 8
+}

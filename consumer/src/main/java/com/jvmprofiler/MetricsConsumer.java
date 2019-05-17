@@ -11,7 +11,7 @@ public class MetricsConsumer {
     public static void main(String[] args) {
             Properties properties = new Properties();
             // normal consumer
-            properties.setProperty("bootstrap.servers","10.116.137.250:9092");
+            properties.setProperty("bootstrap.servers","10.227.215.228:9092");
             properties.put("group.id", "metrics-consumer-group-v1");
             properties.put("auto.commit.enable", "false");
             properties.put("auto.offset.reset", "earliest");
@@ -19,11 +19,12 @@ public class MetricsConsumer {
             // avro part (deserializer)
             properties.setProperty("key.deserializer", StringDeserializer.class.getName());
             properties.setProperty("value.deserializer", KafkaAvroDeserializer.class.getName());
-            properties.setProperty("schema.registry.url", "http://10.116.137.250:8081");
+            properties.setProperty("schema.registry.url", "http://10.227.215.228:8081");
             properties.setProperty("specific.avro.reader", "true");
 
             KafkaConsumer<String, JVMMetrics> kafkaConsumer = new KafkaConsumer<>(properties);
-            String topic = "jvm-metrics-1";
+            //String topic = "jvm-metrics-1";
+            String topic = "jvmprofiler_CpuAndMemory";
             TopicPartition topicPartition = new TopicPartition(topic,0);
             List<TopicPartition> topics = Arrays.asList(topicPartition);
 

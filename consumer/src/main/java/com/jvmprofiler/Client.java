@@ -134,8 +134,10 @@ public class Client {
                     .setSystemCpuLoad(metrics.getSystemCpuLoad())
                     .setProcessCpuTime(metrics.getProcessCpuTime())
                     //.setVmHWM(obj.getLong("vmHWM"))
-                    //.setAppId()
+                    .setAppId(metrics.getAppId())
                     .setName(metrics.getName())
+                    .setGraphiteSchema(metrics.getGraphiteSchema())
+                    .setProfiler(metrics.getProfiler())
                     .setProcessUuid(metrics.getProcessUuid())
                     .addAllGc(gc_array)
                 .build());

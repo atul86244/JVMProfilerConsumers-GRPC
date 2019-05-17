@@ -17,11 +17,9 @@ message MetricsData {
 
    repeated BUFFERPOOLS bufferPools = 2;
     double heapMemoryTotalUsed = 3;
-    string graphiteSchema = 4;
-    string profiler = 5;
-    double epochMillis = 6;
-    double nonHeapMemoryCommitted = 7;
-    double heapMemoryCommitted = 8;
+    double epochMillis = 4;
+    double nonHeapMemoryCommitted = 5;
+    double heapMemoryCommitted = 6;
 
    message MEMORYPOOLS {
       double peakUsageMax = 1;
@@ -34,15 +32,18 @@ message MetricsData {
       double usageCommitted = 8;
    }
 
-   repeated MEMORYPOOLS memoryPools = 9;
-    double processCpuLoad = 10;
-    double systemCpuLoad = 11;
-    double processCpuTime = 12;
+   repeated MEMORYPOOLS memoryPools = 7;
+    double processCpuLoad = 8;
+    double systemCpuLoad = 9;
+    double processCpuTime = 10;
 
-    string appId = 13;
-    string name = 14;
-    string host = 15;
-    string processUuid = 16;
+   message APPID {
+   }
+
+    APPID appId = 11;
+    string name = 12;
+    string host = 13;
+    string processUuid = 14;
 
    message GC {
       double collectionTime = 1;
@@ -50,24 +51,8 @@ message MetricsData {
       double collectionCount = 3;
    }
 
-   repeated GC gc = 17;
+   repeated GC gc = 15;
 }
-
-message StackTrace {
-  repeated string stacktrace = 1;
-  double endEpoch = 2;
-  string appId = 3;
-  string graphiteSchema = 4;
-  string profiler = 5;
-  string host = 6;
-  string name = 7;
-  string processUuid = 8;
-  string threadState = 9;
-  double count = 10;
-  double startEpoch = 11;
-  string threadName = 12;
-}
-
 
 message MetricsResponse {
     string results = 1;
@@ -76,5 +61,4 @@ message MetricsResponse {
 service MetricsService {
 
     rpc Metrics(stream MetricsData) returns (MetricsResponse) {};
-    rpc Stacktrace(stream StackTrace) returns (MetricsResponse) {};
 }

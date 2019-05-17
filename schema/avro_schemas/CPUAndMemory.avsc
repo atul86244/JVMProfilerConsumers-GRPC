@@ -85,7 +85,7 @@
     "type" : "long"
   }, {
     "name" : "appId",
-    "type" : "string"
+    "type" : [ "null", "string" ]
   }, {
     "name" : "name",
     "type" : "string"

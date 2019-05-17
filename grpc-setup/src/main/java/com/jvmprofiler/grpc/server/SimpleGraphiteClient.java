@@ -64,6 +64,25 @@ public class SimpleGraphiteClient {
         }
     }
 
+    public void sendStackTraceMetrics(Map<String, String> metrics, double timeStamp) {
+        try {
+            Socket socket = createSocket();
+            OutputStream s = socket.getOutputStream();
+            PrintWriter out = new PrintWriter(s, true);
+            for (Map.Entry<String, String> metric: metrics.entrySet()) {
+                out.printf("%s %s %.0f%n", metric.getKey(), metric.getValue().toString(), timeStamp);
+                System.out.format("%s %s %.0f%n", metric.getKey(), metric.getValue().toString(), timeStamp);
+                //System.out.println( metric.getValue().intValue() + " " + metric.getKey() );
+            }
+            out.close();
+            socket.close();
+        } catch (UnknownHostException e) {
+            throw new GraphiteException("Unknown host: " + graphiteHost);
+        } catch (IOException e) {
+            throw new GraphiteException("Error while writing data to graphite: " + e.getMessage(), e);
+        }
+    }
+
     /**
      * Send a single metric with the current time as timestamp to graphite.
      *

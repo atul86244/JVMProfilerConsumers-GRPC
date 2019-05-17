@@ -2,3 +2,61 @@
 {"nonHeapMemoryTotalUsed":1.2314232E7,"bufferPools":[{"totalCapacity":0,"name":"direct","count":0,"memoryUsed":0},{"totalCapacity":0,"name":"mapped","count":0,"memoryUsed":0}],"heapMemoryTotalUsed":2.57528E7,"epochMillis":1546422021034,"nonHeapMemoryCommitted":1.4614528E7,"heapMemoryCommitted":2.57425408E8,"memoryPools":[{"peakUsageMax":251658240,"usageMax":251658240,"peakUsageUsed":567424,"name":"Code Cache","peakUsageCommitted":2555904,"usageUsed":567424,"type":"Non-heap memory","usageCommitted":2555904},{"peakUsageMax":-1,"usageMax":-1,"peakUsageUsed":10538824,"name":"Metaspace","peakUsageCommitted":10747904,"usageUsed":10538824,"type":"Non-heap memory","usageCommitted":10747904},{"peakUsageMax":1073741824,"usageMax":1073741824,"peakUsageUsed":1207984,"name":"Compressed Class Space","peakUsageCommitted":1310720,"usageUsed":1207984,"type":"Non-heap memory","usageCommitted":1310720},{"peakUsageMax":1409286144,"usageMax":1409286144,"peakUsageUsed":25752800,"name":"PS Eden Space","peakUsageCommitted":67108864,"usageUsed":25752800,"type":"Heap memory","usageCommitted":67108864},{"peakUsageMax":11010048,"usageMax":11010048,"peakUsageUsed":0,"name":"PS Survivor Space","peakUsageCommitted":11010048,"usageUsed":0,"type":"Heap memory","usageCommitted":11010048},{"peakUsageMax":2863661056,"usageMax":2863661056,"peakUsageUsed":0,"name":"PS Old Gen","peakUsageCommitted":179306496,"usageUsed":0,"type":"Heap memory","usageCommitted":179306496}],"processCpuLoad":0.1257056759231004,"systemCpuLoad":0.26666666666666666,"processCpuTime":673579000,"appId":null,"name":"45495@m-c02tr3kbg8wn","host":"m-c02tr3kbg8wn","processUuid":"e3e79680-cb66-435d-8087-9eb671240a08","gc":[{"collectionTime":0,"name":"PS Scavenge","collectionCount":0},{"collectionTime":0,"name":"PS MarkSweep","collectionCount":0}]}
 {"nonHeapMemoryTotalUsed":1.3055952E7,"bufferPools":[{"totalCapacity":0,"name":"direct","count":0,"memoryUsed":0},{"totalCapacity":0,"name":"mapped","count":0,"memoryUsed":0}],"heapMemoryTotalUsed":2.57528E7,"epochMillis":1546422081034,"nonHeapMemoryCommitted":1.4876672E7,"heapMemoryCommitted":2.57425408E8,"memoryPools":[{"peakUsageMax":251658240,"usageMax":251658240,"peakUsageUsed":1235328,"name":"Code Cache","peakUsageCommitted":2555904,"usageUsed":1224768,"type":"Non-heap memory","usageCommitted":2555904},{"peakUsageMax":-1,"usageMax":-1,"peakUsageUsed":10615680,"name":"Metaspace","peakUsageCommitted":11010048,"usageUsed":10615680,"type":"Non-heap memory","usageCommitted":11010048},{"peakUsageMax":1073741824,"usageMax":1073741824,"peakUsageUsed":1215504,"name":"Compressed Class Space","peakUsageCommitted":1310720,"usageUsed":1215504,"type":"Non-heap memory","usageCommitted":1310720},{"peakUsageMax":1409286144,"usageMax":1409286144,"peakUsageUsed":25752800,"name":"PS Eden Space","peakUsageCommitted":67108864,"usageUsed":25752800,"type":"Heap memory","usageCommitted":67108864},{"peakUsageMax":11010048,"usageMax":11010048,"peakUsageUsed":0,"name":"PS Survivor Space","peakUsageCommitted":11010048,"usageUsed":0,"type":"Heap memory","usageCommitted":11010048},{"peakUsageMax":2863661056,"usageMax":2863661056,"peakUsageUsed":0,"name":"PS Old Gen","peakUsageCommitted":179306496,"usageUsed":0,"type":"Heap memory","usageCommitted":179306496}],"processCpuLoad":2.049954890450654E-4,"systemCpuLoad":0.17668013832756968,"processCpuTime":772005000,"appId":null,"name":"45495@m-c02tr3kbg8wn","host":"m-c02tr3kbg8wn","processUuid":"e3e79680-cb66-435d-8087-9eb671240a08","gc":[{"collectionTime":0,"name":"PS Scavenge","collectionCount":0},{"collectionTime":0,"name":"PS MarkSweep","collectionCount":0}]}
 {"nonHeapMemoryTotalUsed":1.310924E7,"bufferPools":[{"totalCapacity":0,"name":"direct","count":0,"memoryUsed":0},{"totalCapacity":0,"name":"mapped","count":0,"memoryUsed":0}],"heapMemoryTotalUsed":2.977984E7,"epochMillis":1546422082077,"nonHeapMemoryCommitted":1.4876672E7,"heapMemoryCommitted":2.57425408E8,"memoryPools":[{"peakUsageMax":251658240,"usageMax":251658240,"peakUsageUsed":1268992,"name":"Code Cache","peakUsageCommitted":2555904,"usageUsed":1258816,"type":"Non-heap memory","usageCommitted":2555904},{"peakUsageMax":-1,"usageMax":-1,"peakUsageUsed":10633440,"name":"Metaspace","peakUsageCommitted":11010048,"usageUsed":10633440,"type":"Non-heap memory","usageCommitted":11010048},{"peakUsageMax":1073741824,"usageMax":1073741824,"peakUsageUsed":1217688,"name":"Compressed Class Space","peakUsageCommitted":1310720,"usageUsed":1217688,"type":"Non-heap memory","usageCommitted":1310720},{"peakUsageMax":1409286144,"usageMax":1409286144,"peakUsageUsed":29779840,"name":"PS Eden Space","peakUsageCommitted":67108864,"usageUsed":29779840,"type":"Heap memory","usageCommitted":67108864},{"peakUsageMax":11010048,"usageMax":11010048,"peakUsageUsed":0,"name":"PS Survivor Space","peakUsageCommitted":11010048,"usageUsed":0,"type":"Heap memory","usageCommitted":11010048},{"peakUsageMax":2863661056,"usageMax":2863661056,"peakUsageUsed":0,"name":"PS Old Gen","peakUsageCommitted":179306496,"usageUsed":0,"type":"Heap memory","usageCommitted":179306496}],"processCpuLoad":0.004082389030650162,"systemCpuLoad":0.10697115384615384,"processCpuTime":806349000,"appId":null,"name":"45495@m-c02tr3kbg8wn","host":"m-c02tr3kbg8wn","processUuid":"e3e79680-cb66-435d-8087-9eb671240a08","gc":[{"collectionTime":0,"name":"PS Scavenge","collectionCount":0},{"collectionTime":0,"name":"PS MarkSweep","collectionCount":0}]}
+
+
+
+/app/apache-storm/bin/storm jar /app/topologies/venator-sftp-trident-jar-with-dependencies.jar com.walmart.venator.storm.VenatorTranquilityTopology -toponame sftp-image-scanner -dc DFW -numworkers 1 -kafkazookeeper "dfw-kafka-broker06-catdev.prod.walmart.com:9181,dfw-kafka-broker07-catdev.prod.walmart.com:9181,dfw-kafka-broker08-catdev.prod.walmart.com:9181,dfw-kafka-broker09-catdev.prod.walmart.com:9181" -posturl "http://partner.datareceiver.prod.walmart.com/partner-data-receiver-app/services/v1/items?feedType=pcfItem" -swatchPostUrl "http://swatch-extractor.prod.swatchextractor.catdev.prod.walmart.com/swatch-extractor-app/api/swatchextractor/" -topic qarth_sftpimage_metadata -size 2097152 -buffersize 2 2>&1 &
+
+
+jvmprofiler_metrics.SampleMetrics.MyTestApp.gc.PS_Scavenge.collectionCount 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Eden_Space.peakUsageMax 1409286144 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Survivor_Space.peakUsageCommitted 11010048 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Code_Cache.peakUsageCommitted 3145728 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Compressed_Class_Space.usageUsed 1224424 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Survivor_Space.peakUsageMax 11010048 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.gc.PS_MarkSweep.collectionTime 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Code_Cache.peakUsageMax 251658240 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Survivor_Space.usageCommitted 11010048 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.bufferPools.direct.count 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.bufferPools.mapped.count 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Old_Gen.peakUsageCommitted 179306496 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Old_Gen.usageMax 2863661056 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Compressed_Class_Space.peakUsageUsed 1224424 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Code_Cache.usageMax 251658240 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Eden_Space.peakUsageUsed 54000944 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.gc.PS_MarkSweep.collectionCount 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.nonHeapMemoryTotalUsed  15425256 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Survivor_Space.usageUsed 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.gc.PS_Scavenge.collectionTime 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Metaspace.peakUsageUsed 11126272 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Compressed_Class_Space.usageCommitted 1310720 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Code_Cache.usageCommitted 3145728 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.systemCpuLoad  0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Survivor_Space.usageMax 11010048 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.bufferPools.direct.totalCapacity 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.heapMemoryTotalUsed  52658392 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Old_Gen.usageUsed 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Eden_Space.peakUsageCommitted 67108864 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Old_Gen.peakUsageUsed 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Eden_Space.usageCommitted 67108864 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.processCpuLoad  0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Compressed_Class_Space.peakUsageMax 1073741824 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Survivor_Space.peakUsageUsed 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.bufferPools.mapped.totalCapacity 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.bufferPools.mapped.memoryUsed 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Code_Cache.usageUsed 3074560 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.processCpuTime  2581362000 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Compressed_Class_Space.peakUsageCommitted 1310720 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Old_Gen.usageCommitted 179306496 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Old_Gen.peakUsageMax 2863661056 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.nonHeapMemoryCommitted  15425256 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Metaspace.peakUsageCommitted 11534336 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Eden_Space.usageMax 1409286144 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Metaspace.peakUsageMax -1 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Metaspace.usageUsed 11126272 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Compressed_Class_Space.usageMax 1073741824 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.PS_Eden_Space.usageUsed 54000944 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.bufferPools.direct.memoryUsed 0 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Code_Cache.peakUsageUsed 3078784 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Metaspace.usageCommitted 11534336 1547449749
+jvmprofiler_metrics.SampleMetrics.MyTestApp.memoryPools.Metaspace.usageMax -1 1547449749
